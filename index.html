@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISR Form Autofill</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>SEBI ISR Form Autofill</h1>
+    <form id="formSelector">
+      <label for="formType">Choose Form:</label>
+      <select id="formType" name="formType">
+        <option value="ISR1">ISR-1</option>
+        <option value="ISR2">ISR-2</option>
+        <option value="ISR3">ISR-3</option>
+        <option value="ISR4">ISR-4</option>
+        <option value="FORM45">Form 45</option>
+      </select>
+    </form>
+    <form id="formInputs">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="pan">PAN Number:</label>
+      <input type="text" id="pan" name="pan" required />
+      <label for="folio">Folio Number:</label>
+      <input type="text" id="folio" name="folio" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required />
+      <button type="submit">Generate PDF</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
